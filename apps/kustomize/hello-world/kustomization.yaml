@@ -21,4 +21,4 @@ patches:
 - path: overlays/edit-value.yaml
   target:
       kind: Deployment
-      name: hello-world
+      name: the-deployment
