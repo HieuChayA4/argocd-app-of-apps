@@ -8,10 +8,10 @@ image:
   repository: nginx
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "helm-demo"
 
-nameOverride: ""
-fullnameOverride: ""
+nameOverride: "hieu-helm-demo"
+fullnameOverride: "hieu-helm-demo"
 
 serviceAccount:
   # Specifies whether a service account should be created
