@@ -7,11 +7,10 @@ metadata:
 # at https://github.com/monopole/hello
 resources:
 
-- https://github.com/kubernetes-sigs/kustomize/blob/master/examples/helloWorld/configMap.yaml
+- https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/examples/helloWorld/configMap.yaml
 
-- https://github.com/kubernetes-sigs/kustomize/blob/master/examples/helloWorld/deployment.yaml
-
-- https://github.com/kubernetes-sigs/kustomize/blob/master/examples/helloWorld/service.yaml
+- https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/examples/helloWorld/deployment.yaml
+- https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/examples/helloWorld/service.yaml
 
 namespace: kustomize-test
 commonLabels:
