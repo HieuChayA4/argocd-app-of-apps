@@ -1,17 +1,18 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-metadata:
-  name: hello-world
 
 # Example configuration for the webserver
 # at https://github.com/monopole/hello
 resources:
 
-- https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/examples/helloWorld/configMap.yaml
-
-- https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/examples/helloWorld/deployment.yaml
-- https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/examples/helloWorld/service.yaml
-
+#- https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/examples/helloWorld/configMap.yaml
+- configMap.yaml
+#- https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/examples/helloWorld/deployment.yaml
+- deployment.yaml
+#- https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/examples/helloWorld/service.yaml
+- service.yaml
+metadata:
+  name: hello-world
 namespace: kustomize-test
 commonLabels:
   someName: demo-demo
