@@ -16,9 +16,4 @@ metadata:
 namespace: kustomize-test
 commonLabels:
   someName: demo-demo
-#patch json6902 demo replace
-patches:
-- path: overlays/edit-value.yaml
-  target:
-      kind: Deployment
-      name: the-deployment
+
