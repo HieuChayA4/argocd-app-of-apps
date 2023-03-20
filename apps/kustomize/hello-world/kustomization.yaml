@@ -6,11 +6,11 @@ kind: Kustomization
 resources:
 
 #- https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/examples/helloWorld/configMap.yaml
-- configMap.yaml
+- base/configMap.yaml
 #- https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/examples/helloWorld/deployment.yaml
-- deployment.yaml
+- base/deployment.yaml
 #- https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/examples/helloWorld/service.yaml
-- service.yaml
+- base/service.yaml
 metadata:
   name: hello-world
 namespace: kustomize-test
