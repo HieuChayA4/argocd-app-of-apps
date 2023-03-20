@@ -9,7 +9,7 @@ spec:
         namespace: argocd
         server: 'https://kubernetes.default.svc'
     source:
-        path: apps\argocd
+        path: apps/argocd
         repoURL: 'https://github.com/HieuChayA4/argocd-app-of-apps'
         targetRevision: HEAD
     project: default
