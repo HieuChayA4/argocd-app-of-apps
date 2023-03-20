@@ -1,0 +1,2 @@
+- {op: replace,  path: /spec/rules/0/host, value: hieuchaya.argocd.local}
+- {op: replace,  path: /spec/tls/0/hosts/0, value: hieuchaya.argocd.local}

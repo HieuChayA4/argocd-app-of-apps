@@ -10,7 +10,6 @@ spec:
     path: applications
     repoURL: 'https://github.com/HieuChayA4/argocd-app-of-apps'
     targetRevision: HEAD    
-    path: apps
     directory:
       recurse: true
   project: default
