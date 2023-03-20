@@ -17,3 +17,10 @@ namespace: kustomize-test
 commonLabels:
   someName: demo-demo
 
+#patch json6902 demo replace
+patchesJson6902:
+- path: ../overlays/change-replicas.yaml
+  target:
+      version: v1
+      kind: Deployment
+      name: the-deployment
